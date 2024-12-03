@@ -1,202 +1,215 @@
 /* Reset básico de margens e paddings */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Corpo da página */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f0ff; /* Fundo claro, lavanda */
-  color: #3a3a3a; /* Texto escuro para contraste */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #fafafa; /* Fundo suave, cinza muito claro */
+    color: #333; /* Texto em cinza escuro para contraste e legibilidade */
 }
 
-/* Estilo do header */
+/* Cabeçalho */
 header {
-  background-color: #6a1b9a; /* Roxo escuro */
-  color: white;
-  padding: 20px 0;
+    background-color: #4a148c; /* Roxo escuro elegante */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
 }
 
-header #title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+header img {
+    max-width: 100%; /* Responsividade para o logo */
+    height: auto;
 }
 
-header #title img {
-  width: 50px;
-  height: auto;
+/* Menu de navegação */
+nav .navmenu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 20px 0;
 }
 
-header .headtitle h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #fff;
+nav .navmenu li a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    background-color: #6a1b9a; /* Roxo mais suave */
+    border-radius: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
 }
 
-header .headtitle h2 {
-  font-size: 1.2rem;
-  color: #d1a7f3; /* Roxo claro */
-  font-weight: normal;
+nav .navmenu li a:hover {
+    background-color: #9c27b0; /* Roxo mais claro ao passar o mouse */
 }
 
-header nav {
-  margin-top: 20px;
-  text-align: center;
-}
-
-header nav .navmenu {
-  list-style: none;
-  display: inline-flex;
-  gap: 30px;
-}
-
-header nav .navmenu li {
-  display: inline-block;
-}
-
-header nav .navmenu a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 600;
-  padding: 10px 20px;
-  background-color: #8e24aa; /* Roxo vibrante */
-  border-radius: 30px;
-  transition: background-color 0.3s ease;
-}
-
-header nav .navmenu a:hover {
-  background-color: #9c27b0; /* Roxo ainda mais vibrante */
-}
-
-/* Estilo da área principal */
-main {
-  padding: 40px 10%;
-}
-
+/* Seção Principal */
 #principal {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
+    text-align: center;
+    padding: 60px 20px;
 }
 
-#principal img {
-  width: 100%;
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+#principal .box {
+    background-color: #ffffff; /* Branco clássico */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.box {
-  background-color: #d1a7f3; /* Roxo claro */
-  border-radius: 15px;
-  padding: 30px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+#principal h2 {
+    font-size: 2.4rem;
+    color: #4a148c; /* Cor do título: roxo escuro */
+    margin-bottom: 20px;
 }
 
-.box h2 {
-  font-size: 2rem;
-  color: #6a1b9a;
-  font-weight: bold;
-  margin-bottom: 20px;
+#principal p {
+    font-size: 1.2rem;
+    color: #666; /* Cinza suave para o texto */
 }
 
-.insidebox img {
-  width: 40px;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-.insidebox p {
-  font-size: 1.2rem;
-  color: #3a3a3a;
-}
-
-.insidebox span {
-  font-weight: bold;
-  color: #6a1b9a;
-}
-
-/* Estilo das seções de tópicos */
+/* Seção de Divulgação de Eventos */
 .topics {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
-.topics section {
-  padding: 30px 0;
-}
-
-.topics .subtitle {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-
-.topics .subtitle img {
-  width: 40px;
-  height: auto;
+    padding: 40px 15%;
+    text-align: center;
 }
 
 .topics h2 {
-  font-size: 2.2rem;
-  color: #6a1b9a;
-  font-weight: bold;
+    font-size: 2.5rem;
+    color: #4a148c;
+    margin-bottom: 30px;
 }
 
-.topics p {
-  font-size: 1.1rem;
-  color: #3a3a3a;
-  margin-bottom: 20px;
+.evento {
+    background-color: #ffffff; /* Branco para cada evento */
+    border: 1px solid #e0e0e0; /* Borda leve e discreta */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.topics .container {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+.evento h1 {
+    font-size: 1.8rem;
+    color: #4a148c;
+    margin-bottom: 15px;
 }
 
-.topics .container img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.evento p {
+    font-size: 1.1rem;
+    color: #333;
 }
 
-/* Estilo do rodapé */
+.evento strong {
+    font-weight: bold;
+}
+
+/* Formulário de Inscrição */
+#formulario {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra leve para o formulário */
+}
+
+#formulario h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #4a148c;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc; /* Borda discreta */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra leve */
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #4a148c; /* Roxo escuro para o botão */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6a1b9a; /* Roxo mais claro ao passar o mouse */
+}
+
+/* Rodapé */
 footer {
-  background-color: #6a1b9a;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
+    background-color: #4a148c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
 }
 
 footer p {
-  font-size: 1rem;
+    margin-top: 10px;
+    color: #fff;
 }
 
-/* Responsividade para dispositivos menores */
+/* Responsividade */
 @media (max-width: 768px) {
-  main {
-    padding: 20px 5%;
-  }
+    /* Ajustes para telas menores */
+    .topics {
+        padding: 40px 10%;
+    }
 
-  .topics .container {
-    flex-direction: column;
-    align-items: center;
-  }
+    #formulario {
+        padding: 25px;
+        width: 90%;
+    }
 
-  header .navmenu {
-    flex-direction: column;
-    gap: 15px;
-  }
+    .eventos {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 80%; /* Imagem do logo mais compacta */
+    }
+
+    .form-group input {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
 }
